@@ -1,0 +1,32 @@
+    <!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Flask App</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* light gray background */
+        }
+        h1 {
+            color: #333; /* dark gray text */
+        }
+        p {
+            color: #666; /* medium gray text */
+        }
+        #ocean-image {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: -1; /* behind other content */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Dynamic Flask App!</h1>
+    <p>This is a colorful dynamic Flask app.</p>
+    <p>Enjoy!</p>
+    <img src="{{ url_for('static', filename='ocean.jpg') }}" id="ocean-image" alt="Ocean Image">
+</body>
+</html>
