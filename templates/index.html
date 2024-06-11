@@ -8,10 +8,16 @@
             background-color: #f0f0f0; /* light gray background */
         }
         h1 {
-            color: #333; /* dark gray text */
+            color: #f0e9e9; /* dark gray text */
+            align-items: center;
         }
-        p {
-            color: #666; /* medium gray text */
+        h3 {
+            color: #d40404; /* medium gray text */
+            align-items: center;
+        }
+        h4{
+            color: crimson;
+            align-items: center;
         }
         #ocean-image {
             width: 100%;
@@ -25,8 +31,8 @@
 </head>
 <body>
     <h1>Welcome to Dynamic Flask App!</h1>
-    <p>This is a colorful dynamic Flask app.</p>
-    <p>Enjoy!</p>
+    <h3>This is a colorful dynamic Flask app.</h3>
+    <h4>Enjoy!</h4>
     <img src="{{ url_for('static', filename='ocean.jpg') }}" id="ocean-image" alt="Ocean Image">
 </body>
 </html>
